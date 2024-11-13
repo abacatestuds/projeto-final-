@@ -1,60 +1,104 @@
+/* Estilos básicos */
 body {
-    color: white;
-    background: black;
-    margin: 0px;
-    font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Preto */
+    color: #e0e0e0; /* Cinza claro */
 }
 
+/* Cabeçalho */
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
-    padding: 20px;
-    font-size: 32px;
-    color: rgb(42, 122, 228);
+    background-color: #222; /* Preto mais suave */
+    color: #8a2be2; /* Roxo */
+    padding: 1em 0;
+    text-align: center;
 }
 
-.chamada {
-    background: rgb(184, 156, 213);
-    padding-bottom: 80px;
-    padding-top: 80px;
+header input {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #00ffff; /* Ciano */
+    border-radius: 5px;
+    background-color: #333; /* Fundo mais escuro */
+    color: #e0e0e0; /* Texto cinza claro */
+}
+
+/* Navegação */
+nav {
     display: flex;
     justify-content: center;
+    gap: 20px;
+    background-color: #333; /* Preto suave */
+    padding: 10px 0;
 }
 
-.chamada-texto {
-    margin-right: 5%;
+nav a {
+    color: #00ffff; /* Ciano */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
 }
 
-h1 {
-    font-size: 40px;
+nav a:hover {
+    border: 1px solid #8a2be2; /* Roxo */
+    border-radius: 5px;
+    background-color: #222; /* Fundo escuro ao passar o mouse */
 }
 
-p {
-    font-size: 20px;
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.categoria-videos {
+/* Lista de filmes */
+.movie-list {
     display: flex;
-    overflow-x: auto;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.categoria {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 50px;
+.movie-item {
+    background-color: #222; /* Preto suave */
+    border: 2px solid #8a2be2; /* Roxo */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0px 4px 8px rgba(0, 255, 255, 0.1); /* Sombra ciano suave */
 }
 
-.categoria-videos img {
-    opacity: 0.5;
-    height: 200px;
+.movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 255, 255, 0.3); /* Aumenta a sombra ao passar o mouse */
 }
 
-.categoria-videos img:hover {
-    opacity: 1.0;
-    border: 3px solid green;
+.movie-item img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #00ffff; /* Ciano */
 }
 
-.categoria h2 {
-    color: rgb(42, 122, 228);
+.movie-item h3 {
+    margin: 10px 0 5px;
+    color: #8a2be2; /* Roxo */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222; /* Preto mais suave */
+    color: #8a2be2; /* Roxo */
+    border-top: 2px solid #00ffff; /* Linha de borda ciano */
 }
