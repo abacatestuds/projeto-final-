@@ -1,4 +1,4 @@
- /* Fontes e configurações gerais */
+[21:19, 11/13/2024] Samuka¹⁵: /* Fontes e configurações gerais */
 * {
     margin: 0;
     padding: 0;
@@ -35,72 +35,53 @@ header {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fafafa;
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #141414;
-    color: #ffffff;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #202020;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-header h1 {
-    font-size: 2.5em;
-    color: #e50914;
-}
-
-header input[type="text"] {
-    width: 80%;
-    max-width: 600px;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #333;
-    border-radius: 4px;
+.chamada-texto p {
     font-size: 1em;
-    background-color: #303030;
-    color: #ffffff;
+    color: #b0b0b0;
+    margin-bottom: 20px;
 }
 
-#movieList {
+iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de categoria de vídeos */
+.categoria {
+    padding: 40px;
+    text-align: center;
+}
+
+.categoria h2 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.categoria-videos {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-.movie-item {
-    background-color: #202020;
-    width: 200px;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s;
+.categoria-videos a {
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.movie-item:hover {
+.categoria-videos a:hover {
     transform: scale(1.05);
 }
 
-.movie-item h3 {
-    font-size: 1.2em;
-    color: #e50914;
-    margin-bottom: 10px;
-}
-
-.movie-item p {
-    font-size: 0.9em;
-    color: #b3b3b3;
+.categoria-videos img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
 }
