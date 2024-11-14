@@ -35,72 +35,72 @@ header {
     font-size: 2em;
     margin-bottom: 10px;
     color: #fafafa;
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #141414;
-        color: #ffffff;
-    }
-    
-    header {
-        text-align: center;
-        padding: 20px;
-        background-color: #202020;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-    
-    header h1 {
-        font-size: 2.5em;
-        color: #e50914;
-    }
-    
-    header input[type="text"] {
-        width: 80%;
-        max-width: 600px;
-        padding: 10px;
-        margin-top: 10px;
-        border: 1px solid #333;
-        border-radius: 4px;
-        font-size: 1em;
-        background-color: #303030;
-        color: #ffffff;
-    }
-    
-    #movieList {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 20px;
-        gap: 20px;
-    }
-    
-    .movie-item {
-        background-color: #202020;
-        width: 200px;
-        padding: 15px;
-        border-radius: 8px;
-        text-align: center;
-        transition: transform 0.3s;
-    }
-    
-    .movie-item:hover {
-        transform: scale(1.05);
-    }
-    
-    .movie-item h3 {
-        font-size: 1.2em;
-        color: #e50914;
-        margin-bottom: 10px;
-    }
-    
-    .movie-item p {
-        font-size: 0.9em;
-        color: #b3b3b3;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #202020;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #e50914;
+}
+
+header input[type="text"] {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #303030;
+    color: #ffffff;
+}
+
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.movie-item {
+    background-color: #202020;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-item h3 {
+    font-size: 1.2em;
+    color: #e50914;
+    margin-bottom: 10px;
+}
+
+.movie-item p {
+    font-size: 0.9em;
+    color: #b3b3b3;
+}
